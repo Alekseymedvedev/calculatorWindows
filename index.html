@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>StartGulp</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<form class="form">
+        <img class="form__img" src="images/window.png" alt="">
+        <div class="form__description">Tooltip(описание)</div>
+        <label class="form__label">
+            <span class="form__span">Рама:</span>
+            <select class="form__select form__select-1">
+                <option value="2000">БЕЛЫЙ SUPER GALTECH 3-х кам</option>
+                <option value="2500">БЕЛЫЙ GALVIN 4-х кам</option>
+                <option value="3800">ЦВЕТНОЙ GALVIN 4-х + КОМБИ</option>
+                <option value="3300">БЕЛЫЙ GALTECH 5-ти кам</option>
+                <option value="5400">ЦВЕТНОЙ GALVIN 5-ти кам</option>
+            </select>
+        </label>
+        <label class="form__label">
+            <span class="form__span">Импост:</span>
+            <select class="form__select form__select-2">
+                <option value="2800">БЕЛЫЙ SUPER GALTECH 3-х кам</option>
+                <option value="3300">БЕЛЫЙ GALVIN 4-х кам</option>
+                <option value="5000">ЦВЕТНОЙ GALVIN 4-х + КОМБИ</option>
+                <option value="3800">БЕЛЫЙ GALTECH 5-ти кам</option>
+                <option value="6500">ЦВЕТНОЙ GALVIN 5-ти кам</option>
+            </select>
+        </label>
+        <label class="form__label">
+            <span class="form__span">Оконная створка</span>
+            <select class="form__select form__select-3">
+                <option value="2300">БЕЛЫЙ SUPER GALTECH 3-х кам</option>
+                <option value="2500">БЕЛЫЙ GALVIN 4-х кам</option>
+                <option value="3800">ЦВЕТНОЙ GALVIN 4-х + КОМБИ</option>
+                <option value="3300">БЕЛЫЙ GALTECH 5-ти кам</option>
+                <option value="5000">ЦВЕТНОЙ GALVIN 5-ти кам</option>
+            </select>
+        </label>
+        <label class="form__label">
+            <span class="form__span">Дверная створка:</span>
+            <select class="form__select form__select-4">
+                <option value="3400">БЕЛЫЙ SUPER GALTECH 3-х кам</option>
+                <option value="3800">БЕЛЫЙ GALVIN 4-х кам</option>
+                <option value="5400">ЦВЕТНОЙ GALVIN 4-х + КОМБИ</option>
+                <option value="4800">БЕЛЫЙ GALTECH 5-ти кам</option>
+                <option value="7400">ЦВЕТНОЙ GALVIN 5-ти кам</option>
+            </select>
+        </label>
+        <label class="form__label">
+            <span class="form__span">Москитная сетка(1шт):</span>
+            <select class="form__select form__select-5">
+
+                <option value="3000">БЕЛЫЙ SUPER GALTECH 3-х кам</option>
+                <option value="3000">БЕЛЫЙ GALVIN 4-х кам</option>
+                <option value="3000">ЦВЕТНОЙ GALVIN 4-х + КОМБИ</option>
+                <option value="3000">БЕЛЫЙ GALTECH 5-ти кам</option>
+                <option value="3000">ЦВЕТНОЙ GALVIN 5-ти кам</option>
+            </select>
+        </label>
+        <label class="form__label">
+            <span class="form__span"><strong>Выбор стеклопакета:</strong>  ОДНОКАМЕРНЫЙ (4+16+4):</span>
+            <select class="form__select form__select-6">
+                <option value="6400">ПРОЗРАЧНЫЙ</option>
+                <option value="9100">ЭНЕРГОСБЕРЕГАЮЩИЙ</option>
+                <option value="10800">ТОНИРОВАНЫЙ</option>
+            </select>
+        </label>
+        <label class="form__label">
+            <span class="form__span"> <strong>Выбор стеклопакета:</strong> ДВУХКАМЕРНЫЙ (4+9+4+9+4)</span>
+            <select class="form__select form__select-7">
+                <option value="9100">ПРОЗРАЧНЫЙ</option>
+                <option value="12000">ЭНЕРГОСБЕРЕГАЮЩИЙ</option>
+                <option value="13500">ТОНИРОВАНЫЙ</option>
+            </select>
+        </label>
+        <div class="form__name">Акссесуары:</div>
+        <label class="form__label">
+            <span class="form__span">Оконный простой замок:</span>
+            <select class="form__select form__select-8">
+                <option value="3900">3900</option>
+                <option value="0">Убрать</option>
+            </select>
+        </label>
+        <label class="form__label">
+            <span class="form__span">Оконный сложный замок:</span>
+            <select class="form__select form__select-9">
+                <option value="17500">17500</option>
+                <option value="0">Убрать</option>
+            </select>
+        </label>
+        <label class="form__label">
+            <span class="form__span">Дверной замок:</span>
+            <select class="form__select form__select-10">
+                <option value="13400">13400</option>
+                <option value="0">Убрать</option>
+            </select>
+        </label>
+        <label class="form__label">
+            <span class="form__span">Балконный замок:</span>
+            <select class="form__select form__select-11">
+                <option value="9200">9200</option>
+                <option value="0">Убрать</option>
+            </select>
+        </label>
+        <label class="form__label-strong">
+            Итого:
+            <input class="form__input" type="text" value="73000">
+        </label>
+		<div class="form__summ"></div>
+		<a class="form__btn popup-modal" href="#test-modal">Оставить заявку</a>
+	</form>
+	
+<form  id="test-modal" class="form__modal mfp-hide white-popup-block">
+	<input class="form__modal-input" type="text" class="modal__input" placeholder="Введите имя" required>
+	<input class="form__modal-input" type="tel" class="modal__input" placeholder="Введите номер телефона" required>
+	<input class="form__modal-input" type="email" class="modal__input" placeholder="Введите e-mail" required>
+	<button class="modal__btn">Отправить заявку</button>
+	<p><a class="popup-modal-dismiss" href="#">&#10006;</a></p>
+</form>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
